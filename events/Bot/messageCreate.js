@@ -49,7 +49,7 @@ module.exports = async (client, message) => {
         for (const perm of command.data.clientPermissions) {
             if (!botMember || !message.channel.permissionsFor(botMember)?.has(perm)) {
                 return message.reply({
-                    content: `❌ Je n'ai pas la permission \`${perm}\` pour exécuter cette commande.`,
+                    content: client.LangHandler.get(guildData.lang).botmperm,
                 }).catch(() => {}); 
             }
         }
