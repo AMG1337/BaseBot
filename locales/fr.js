@@ -1,6 +1,7 @@
 module.exports = {
     name: "Français",
     dictionnary: {
+      botmperm: "❌ Je n'ai pas la permission suffisante pour exécuter cette commande !",
       mentionbot: (name) => {
         return `Salut **${name}** utilise la commande \`/help\` pour découvrir mes commandes !`
       },
