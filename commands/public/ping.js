@@ -19,7 +19,7 @@ module.exports = {
         const ms = msg.createdTimestamp - message.createdTimestamp
 
         const embed = new EmbedBuilder()
-        .setColor("#2e2e34")
+        .setColor(guildData.embedColor)
         .setTitle(`${client.LangHandler.get(guildData.lang).pingCommand.title} ${client.user.username}`)
         .setDescription(`${client.LangHandler.get(guildData.lang).pingCommand.ping(ms, client.ws.ping)}`)
         .setFooter({
